@@ -4,11 +4,8 @@ var router = express.Router();
 /* GET home page. */
 router.get('/', function(req, res, next) {
   var domain = req.headers.host,
-      subDomain = domain.split('.');
-  if(subDomain[0].length == 0){
-    subDomain = "This guy";
-  }
-  res.render('index', { subDomain: subDomain });
+      domainArr = domain.split('.');
+  res.render('index', { subDomain: domainArr[0] });
 });
 
 module.exports = router;

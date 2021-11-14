@@ -1,2 +1,2 @@
 # creeper
-Just a short simple app for isacreeper.com
+Just a short simple app for isacreeper.com.
